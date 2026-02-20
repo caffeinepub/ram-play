@@ -1,0 +1,157 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Upgrade Calculator to Android Phone Calculator Experience",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "summary": "Add backspace/delete button to remove the last entered digit from the current input",
+      "acceptanceCriteria": [
+        "Backspace button removes the last character from current input display",
+        "Backspace works for both numbers and decimal point",
+        "Backspace on a single digit returns display to '0'"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Add backspace button in the calculator button grid, positioned in the top row next to the clear button. Implement click handler that removes the last character from the current display value, handling edge cases where single digit returns to '0'. Update the button layout to accommodate the new backspace button while maintaining the grid structure."
+        },
+        {
+          "path": "frontend/src/hooks/useCalculator.ts",
+          "operation": "modify",
+          "description": "Add backspace mutation that calls a backend capability to handle backspace operations on the current input state. Include loading state management and error handling consistent with existing mutations (inputNumber, calculate, clear)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Implement continuous calculation mode where pressing an operator after equals continues calculation with the result",
+      "acceptanceCriteria": [
+        "After pressing equals, entering an operator uses the result as the first operand",
+        "Calculation chain continues seamlessly without requiring manual re-entry of result",
+        "Display shows the ongoing calculation correctly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Update operation button handlers to detect when equals was the last action and use the current result as the first operand for the new operation. Modify state management to track whether the last action was equals, enabling seamless continuation of calculations. Update display logic to show the ongoing calculation chain correctly."
+        },
+        {
+          "path": "frontend/src/hooks/useCalculator.ts",
+          "operation": "modify",
+          "description": "Add state tracking for the last action type (equals, operator, number) to enable continuous calculation mode. Modify the calculate mutation to support chaining by preserving the result as the starting point for subsequent operations when an operator is pressed after equals."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Add percentage button functionality that converts the current number to a percentage of the previous operand",
+      "acceptanceCriteria": [
+        "Percentage button converts current input appropriately based on context",
+        "Works correctly in multiplication and division operations",
+        "Display updates to show percentage conversion"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Add percentage (%) button to the calculator grid, typically in the top row with other function buttons. Implement click handler that triggers percentage conversion, updating the display to show the converted value. Position the button logically within the Android-style layout."
+        },
+        {
+          "path": "frontend/src/hooks/useCalculator.ts",
+          "operation": "modify",
+          "description": "Add percentage mutation that calls a backend capability to convert the current number to a percentage based on the operation context. Handle the conversion logic for different operation types (multiplication, division, addition, subtraction) and update the display state accordingly."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Improve the calculator display to show both the calculation expression above and the result or current input below",
+      "acceptanceCriteria": [
+        "Display has two lines: expression history above, current value below",
+        "Expression line shows the complete calculation being built",
+        "Current value line shows larger, more prominent text",
+        "Layout matches Android calculator visual hierarchy"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Restructure the display area to show two lines: a smaller expression line above showing the full calculation being built (e.g., '125 + 75'), and a larger current value line below showing the result or current input. Apply appropriate text sizing with the expression in smaller font and the current value in larger, more prominent font. Add state management to track and display the expression history as operations are performed. Update styling to match Android calculator visual hierarchy with proper spacing and alignment."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Add plus/minus toggle button to switch between positive and negative numbers for the current input",
+      "acceptanceCriteria": [
+        "Plus/minus button toggles the sign of current input",
+        "Works before and after decimal point entry",
+        "Display shows negative sign correctly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Add plus/minus (±) button to the calculator grid, typically positioned in the top row with other function buttons. Implement click handler that toggles the sign of the current input value, updating the display to show the negative sign when applicable. Ensure the button works correctly whether the user has entered integers or decimal numbers."
+        },
+        {
+          "path": "frontend/src/hooks/useCalculator.ts",
+          "operation": "modify",
+          "description": "Add toggleSign mutation that calls a backend capability to toggle the sign of the current input state. Handle the sign change for both integer and decimal values, ensuring the display updates correctly with the negative sign."
+        }
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "summary": "Implement operator button highlighting that shows which operation is currently pending/active",
+      "acceptanceCriteria": [
+        "Active operator button shows distinct highlighted state",
+        "Highlight persists until equals is pressed or new operator selected",
+        "Visual feedback matches Android calculator behavior"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Add state tracking for the currently active operator and apply conditional styling to highlight the active operator button with a distinct visual state (e.g., different background color, border, or accent). Update operator button click handlers to set the active operator state and clear it when equals is pressed or a new operator is selected. Ensure the highlighting persists appropriately and matches Android calculator visual feedback patterns."
+        }
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "summary": "Enhance button layout and sizing to match Android calculator proportions with larger number buttons in a 4x4 grid and operation buttons in a vertical column on the right",
+      "acceptanceCriteria": [
+        "Number buttons are prominently sized in a clear grid layout",
+        "Zero button spans two columns at the bottom",
+        "Operation buttons (+, -, ×, ÷) form a vertical column on the right",
+        "Layout is responsive and matches Android calculator visual structure"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Restructure the calculator button layout to match Android calculator proportions using a grid system. Arrange number buttons (1-9) in a 3x3 grid, position the zero button to span two columns at the bottom left, and place operation buttons (+, -, ×, ÷) in a vertical column on the right side. Adjust button sizing to make number buttons prominently sized and clearly visible. Include function buttons (AC, backspace, %, ±) in the top row. Apply responsive grid layout using CSS Grid or Tailwind grid utilities to maintain proper proportions across different screen sizes."
+        }
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "summary": "Add subtle button press animations and haptic-style visual feedback when buttons are clicked",
+      "acceptanceCriteria": [
+        "Buttons show immediate visual feedback on press",
+        "Animation is smooth and quick (similar to Android)",
+        "Feedback works for all button types (numbers, operators, special functions)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Calculator.tsx",
+          "operation": "modify",
+          "description": "Add CSS classes or inline styles for button press animations using scale transforms and shadow effects to create haptic-style visual feedback. Implement active state styling that triggers on click/touch events for all button types (numbers, operators, special functions). Use Tailwind utilities or CSS transitions to create smooth, quick animations (e.g., transform scale, shadow changes) that match Android calculator responsiveness. Apply transition timing of approximately 100-150ms for immediate feedback without lag."
+        }
+      ]
+    }
+  ]
+}

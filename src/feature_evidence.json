@@ -1,0 +1,149 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-backspace-delete-button-to-remove-the-last-entered-digit-from-the-current-input-positioned-next-to-the-clear-button",
+      "featureTitle": "Add backspace/delete button to remove the last entered digit from the current input, positioned next to the clear button",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-continuous-calculation-mode-where-pressing-an-operator-after-equals-continues-calculation-with-the-result-e-g-5-3-8-then-2-continues-from-8-to-get-10",
+      "featureTitle": "Implement continuous calculation mode where pressing an operator after equals continues calculation with the result (e.g., '5 + 3 = 8', then '+ 2' continues from 8 to get 10)",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-percentage-button-functionality-that-converts-the-current-number-to-a-percentage-of-the-previous-operand-in-calculations",
+      "featureTitle": "Add percentage (%) button functionality that converts the current number to a percentage of the previous operand in calculations",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-improve-the-calculator-display-to-show-both-the-calculation-expression-e-g-125-75-in-a-smaller-font-above-and-the-result-or-current-input-in-larger-font-below-similar-to-android-calculator",
+      "featureTitle": "Improve the calculator display to show both the calculation expression (e.g., '125 + 75') in a smaller font above and the result or current input in larger font below, similar to Android calculator",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-plus-minus-toggle-button-to-switch-between-positive-and-negative-numbers-for-the-current-input",
+      "featureTitle": "Add plus/minus (±) toggle button to switch between positive and negative numbers for the current input",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-operator-button-highlighting-that-shows-which-operation-is-currently-pending-active-with-a-distinct-visual-state",
+      "featureTitle": "Implement operator button highlighting that shows which operation is currently pending/active with a distinct visual state",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-enhance-button-layout-and-sizing-to-match-android-calculator-proportions-with-larger-number-buttons-arranged-in-a-4x4-grid-including-0-spanning-two-columns-and-operation-buttons-in-a-vertical-column-on-the-right",
+      "featureTitle": "Enhance button layout and sizing to match Android calculator proportions with larger number buttons arranged in a 4x4 grid (including 0 spanning two columns) and operation buttons in a vertical column on the right",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-25"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-subtle-button-press-animations-and-haptic-style-visual-feedback-scale-shadow-effects-when-buttons-are-clicked-to-match-android-calculator-responsiveness",
+      "featureTitle": "Add subtle button press animations and haptic-style visual feedback (scale/shadow effects) when buttons are clicked to match Android calculator responsiveness",
+      "files": [
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-26"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Calculator web application",
+  "architectural_notes": [
+    "Calculator web application with standard arithmetic operations"
+  ],
+  "known_issues": [
+    "Current calculator functionality does not match user expectations for Android-style calculator experience"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-3d-game-environment-using-three-js-and-react-three-fiber-featuring-ram-as-the-main-playable-character",
+      "title": "Create a 3D game environment using Three.js and React Three Fiber featuring Ram as the main playable character",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-player-controls-for-ram-character-movement-using-keyboard-inputs-wasd-or-arrow-keys",
+      "title": "Implement player controls for Ram character movement using keyboard inputs (WASD or arrow keys)",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-combat-system-with-basic-attack-mechanics-for-ram-including-melee-attacks-triggered-by-spacebar-or-mouse-click",
+      "title": "Create a combat system with basic attack mechanics for Ram including melee attacks triggered by spacebar or mouse click",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-enemy-characters-demons-asuras-that-spawn-in-the-game-world-and-can-engage-in-combat-with-ram",
+      "title": "Add enemy characters (demons/asuras) that spawn in the game world and can engage in combat with Ram",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-health-system-for-both-ram-and-enemies-with-visual-health-bars",
+      "title": "Implement health system for both Ram and enemies with visual health bars",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-game-hud-showing-ram-s-health-current-score-and-level",
+      "title": "Display game HUD showing Ram's health, current score, and level",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-game-start-screen-with-title-play-button-and-instructions-for-controls",
+      "title": "Create a game start screen with title, play button, and instructions for controls",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-game-over-state-when-ram-s-health-reaches-zero-with-option-to-restart",
+      "title": "Implement game over state when Ram's health reaches zero with option to restart",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-implement-a-cohesive-visual-theme-inspired-by-indian-mythology-with-warm-earthy-tones-saffron-gold-deep-red-traditional-patterns-and-epic-atmosphere-suitable-for-ram-s-story",
+      "title": "Design and implement a cohesive visual theme inspired by Indian mythology with warm earthy tones (saffron, gold, deep red), traditional patterns, and epic atmosphere suitable for Ram's story",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-ram-character-with-a-customizable-player-character-system-allowing-players-to-choose-between-three-hero-types-mercenary-futuristic-cyborg-or-urban-rebel-with-distinct-3d-models-and-visual-styles",
+      "title": "Replace the Ram character with a customizable player character system allowing players to choose between three hero types: mercenary, futuristic cyborg, or urban rebel, with distinct 3D models and visual styles",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-transform-the-game-environment-from-the-current-mythology-themed-setting-into-a-selectable-map-system-with-three-distinct-3d-environments-tropical-island-bermuda-style-neon-drenched-cyberpunk-city-or-post-apocalyptic-wasteland",
+      "title": "Transform the game environment from the current mythology-themed setting into a selectable map system with three distinct 3D environments: tropical island (Bermuda-style), neon-drenched cyberpunk city, or post-apocalyptic wasteland",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-unique-gameplay-mechanics-differentiators-including-increased-movement-speed-system-hero-specific-special-abilities-one-per-character-type-and-drivable-mech-vehicles-that-spawn-on-the-map",
+      "title": "Implement unique gameplay mechanics differentiators including increased movement speed system, hero-specific special abilities (one per character type), and drivable mech vehicles that spawn on the map",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-indian-mythology-visual-theme-with-a-modern-battle-royale-aesthetic-featuring-neutral-ui-colors-contemporary-fonts-and-action-shooter-styling-appropriate-for-the-mercenary-cyborg-rebel-setting",
+      "title": "Replace Indian mythology visual theme with a modern battle royale aesthetic featuring neutral UI colors, contemporary fonts, and action-shooter styling appropriate for the mercenary/cyborg/rebel setting",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rename-the-project-from-ram-play-to-a-title-appropriate-for-a-3d-battle-royale-shooter-game",
+      "title": "Rename the project from 'Ram Play' to a title appropriate for a 3D battle royale shooter game",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-3d-battle-royale-game-with-a-calculator-application-featuring-a-clean-numeric-keypad-interface-with-digits-0-9-basic-arithmetic-operators-equals-button-clear-button-and-a-display-showing-the-current-input-and-calculation-result",
+      "title": "Replace the existing 3D battle royale game with a calculator application featuring a clean numeric keypad interface with digits 0-9, basic arithmetic operators (+, -, ×, ÷), equals button, clear button, and a display showing the current input and calculation result",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-implement-a-modern-minimalist-visual-theme-for-the-calculator-with-clean-typography-subtle-shadows-and-a-professional-color-scheme-using-neutral-tones-with-accent-colors-for-operation-buttons",
+      "title": "Design and implement a modern, minimalist visual theme for the calculator with clean typography, subtle shadows, and a professional color scheme using neutral tones with accent colors for operation buttons",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-backspace-delete-button-to-remove-the-last-entered-digit-from-the-current-input-positioned-next-to-the-clear-button",
+      "title": "Add backspace/delete button to remove the last entered digit from the current input, positioned next to the clear button",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-continuous-calculation-mode-where-pressing-an-operator-after-equals-continues-calculation-with-the-result-e-g-5-3-8-then-2-continues-from-8-to-get-10",
+      "title": "Implement continuous calculation mode where pressing an operator after equals continues calculation with the result (e.g., '5 + 3 = 8', then '+ 2' continues from 8 to get 10)",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-percentage-button-functionality-that-converts-the-current-number-to-a-percentage-of-the-previous-operand-in-calculations",
+      "title": "Add percentage (%) button functionality that converts the current number to a percentage of the previous operand in calculations",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-the-calculator-display-to-show-both-the-calculation-expression-e-g-125-75-in-a-smaller-font-above-and-the-result-or-current-input-in-larger-font-below-similar-to-android-calculator",
+      "title": "Improve the calculator display to show both the calculation expression (e.g., '125 + 75') in a smaller font above and the result or current input in larger font below, similar to Android calculator",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-plus-minus-toggle-button-to-switch-between-positive-and-negative-numbers-for-the-current-input",
+      "title": "Add plus/minus (±) toggle button to switch between positive and negative numbers for the current input",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-operator-button-highlighting-that-shows-which-operation-is-currently-pending-active-with-a-distinct-visual-state",
+      "title": "Implement operator button highlighting that shows which operation is currently pending/active with a distinct visual state",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-button-layout-and-sizing-to-match-android-calculator-proportions-with-larger-number-buttons-arranged-in-a-4x4-grid-including-0-spanning-two-columns-and-operation-buttons-in-a-vertical-column-on-the-right",
+      "title": "Enhance button layout and sizing to match Android calculator proportions with larger number buttons arranged in a 4x4 grid (including 0 spanning two columns) and operation buttons in a vertical column on the right",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-subtle-button-press-animations-and-haptic-style-visual-feedback-scale-shadow-effects-when-buttons-are-clicked-to-match-android-calculator-responsiveness",
+      "title": "Add subtle button press animations and haptic-style visual feedback (scale/shadow effects) when buttons are clicked to match Android calculator responsiveness",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-8",
+      "summary": "Create a basic calculator application with standard arithmetic operations",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Implement calculator logic in the backend actor to handle arithmetic operations, maintaining calculation state including current operand, pending operation, and result",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Upgrade calculator to match Android phone calculator functionality and user experience",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Ram Play",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

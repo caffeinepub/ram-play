@@ -1,0 +1,173 @@
+{
+  "kind": "build_request",
+  "title": "Upgrade calculator to Android phone calculator experience",
+  "projectName": "Calculator",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "text": "Add backspace/delete button to remove the last entered digit from the current input, positioned next to the clear button",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backspace button removes the last character from current input display",
+        "Backspace works for both numbers and decimal point",
+        "Backspace on a single digit returns display to '0'",
+        "Backend maintains correct state after backspace operations"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Implement continuous calculation mode where pressing an operator after equals continues calculation with the result (e.g., '5 + 3 = 8', then '+ 2' continues from 8 to get 10)",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "After pressing equals, entering an operator uses the result as the first operand",
+        "Calculation chain continues seamlessly without requiring manual re-entry of result",
+        "Display shows the ongoing calculation correctly"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Add percentage (%) button functionality that converts the current number to a percentage of the previous operand in calculations",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Percentage button converts current input appropriately based on context",
+        "Works correctly in multiplication and division operations",
+        "Display updates to show percentage conversion"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Improve the calculator display to show both the calculation expression (e.g., '125 + 75') in a smaller font above and the result or current input in larger font below, similar to Android calculator",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display has two lines: expression history above, current value below",
+        "Expression line shows the complete calculation being built",
+        "Current value line shows larger, more prominent text",
+        "Layout matches Android calculator visual hierarchy"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Add plus/minus (±) toggle button to switch between positive and negative numbers for the current input",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Plus/minus button toggles the sign of current input",
+        "Works before and after decimal point entry",
+        "Display shows negative sign correctly",
+        "Backend maintains correct negative number state"
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "text": "Implement operator button highlighting that shows which operation is currently pending/active with a distinct visual state",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Active operator button shows distinct highlighted state",
+        "Highlight persists until equals is pressed or new operator selected",
+        "Visual feedback matches Android calculator behavior"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "text": "Enhance button layout and sizing to match Android calculator proportions with larger number buttons arranged in a 4x4 grid (including 0 spanning two columns) and operation buttons in a vertical column on the right",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Number buttons are prominently sized in a clear grid layout",
+        "Zero button spans two columns at the bottom",
+        "Operation buttons (+, -, ×, ÷) form a vertical column on the right",
+        "Layout is responsive and matches Android calculator visual structure"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "text": "Add subtle button press animations and haptic-style visual feedback (scale/shadow effects) when buttons are clicked to match Android calculator responsiveness",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-android-calculator"
+        ],
+        "quotes": [
+          "This calculator are not work very nice please upgrade this calculator just like a Android phone calculator"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Buttons show immediate visual feedback on press",
+        "Animation is smooth and quick (similar to Android)",
+        "Feedback works for all button types (numbers, operators, special functions)"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing single-actor backend architecture",
+    "Keep the modern minimalist visual theme with neutral tones and accent colors",
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts or frontend/src/hooks/useActor.ts",
+    "Preserve the existing Migration.run state management pattern"
+  ],
+  "nonGoals": [
+    "Scientific calculator functions (sin, cos, tan, logarithms, etc.)",
+    "History or memory storage features",
+    "Themes or color customization beyond the existing design",
+    "Unit conversion features",
+    "Multi-line calculation editing"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

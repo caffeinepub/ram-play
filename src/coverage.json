@@ -1,0 +1,120 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T08:13:45.278Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 8,
+    "implemented": 8,
+    "items": [
+      {
+        "id": "REQ-19",
+        "summary": "Add backspace/delete button to remove the last entered digit from the current input, positioned next to the clear button",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx",
+          "frontend/src/hooks/useCalculator.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Implement continuous calculation mode where pressing an operator after equals continues calculation with the result (e.g., '5 + 3 = 8', then '+ 2' continues from 8 to get 10)",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx",
+          "frontend/src/hooks/useCalculator.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-21",
+        "summary": "Add percentage (%) button functionality that converts the current number to a percentage of the previous operand in calculations",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx",
+          "frontend/src/hooks/useCalculator.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-22",
+        "summary": "Improve the calculator display to show both the calculation expression (e.g., '125 + 75') in a smaller font above and the result or current input in larger font below, similar to Android calculator",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-23",
+        "summary": "Add plus/minus (±) toggle button to switch between positive and negative numbers for the current input",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx",
+          "frontend/src/hooks/useCalculator.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-24",
+        "summary": "Implement operator button highlighting that shows which operation is currently pending/active with a distinct visual state",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-25",
+        "summary": "Enhance button layout and sizing to match Android calculator proportions with larger number buttons arranged in a 4x4 grid (including 0 spanning two columns) and operation buttons in a vertical column on the right",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      },
+      {
+        "id": "REQ-26",
+        "summary": "Add subtle button press animations and haptic-style visual feedback (scale/shadow effects) when buttons are clicked to match Android calculator responsiveness",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Calculator.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/Calculator.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
